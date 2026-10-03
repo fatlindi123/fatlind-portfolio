@@ -39,6 +39,5 @@ npm start
 
 ## Contact
 
-- Email: [lubishtanifatlind@gmail.com](mailto:lubishtanifatlind@gmail.com)
 - GitHub: [fatlindi123](https://github.com/fatlindi123)
 - LinkedIn: [Fatlind Lubishtani](https://www.linkedin.com/in/fatlind-lubishtani-589b662b0/)

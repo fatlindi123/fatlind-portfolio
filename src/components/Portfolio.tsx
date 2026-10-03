@@ -5,7 +5,6 @@ import styles from './portfolio.module.scss';
 
 const github = 'https://github.com/fatlindi123';
 const linkedin = 'https://www.linkedin.com/in/fatlind-lubishtani-589b662b0/';
-const email = 'lubishtanifatlind@gmail.com';
 
 function Reveal({ children, className = '' }: { children: ReactNode; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -116,7 +115,7 @@ export default function Portfolio() {
           <p className={styles.role}>AI Engineer <b>/</b> Software Developer</p>
           <p className={styles.heroText}>I build useful AI-powered software, developer tools, and backend systems — with a focus on how the pieces work together.</p>
           <div className={styles.heroActions}><a className={styles.primaryButton} href="#projects">View projects <Arrow /></a><a className={styles.textButton} href="#contact">Contact me <Arrow /></a></div>
-          <div className={styles.heroSocials}><a href={github} target="_blank" rel="noreferrer">GitHub <Arrow /></a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a><a href={`mailto:${email}`}>Email <Arrow /></a></div>
+          <div className={styles.heroSocials}><a href={github} target="_blank" rel="noreferrer">GitHub <Arrow /></a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a></div>
         </div>
         <div ref={artRef} onPointerMove={moveHeroArt} onPointerLeave={resetHeroArt} className={styles.heroArt} aria-label="Animated code and retrieval network" role="img">
           <div className={styles.artOrb}><span>AI</span><i /><i /><i /></div>
@@ -163,7 +162,7 @@ export default function Portfolio() {
     </section>
 
     <section className={styles.contact} id="contact">
-      <Reveal className={styles.sectionLabel}><span>04</span> SAY HELLO</Reveal><div className={styles.contactInner}><Reveal><p className={styles.contactEyebrow}>HAVE A PROJECT OR JUST WANT TO TALK?</p><h2>Let’s make<br /><em>something useful.</em></h2></Reveal><Reveal className={styles.contactLinks}><a href={`mailto:${email}`}>{email} <Arrow /></a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a><a href={github} target="_blank" rel="noreferrer">GitHub <Arrow /></a></Reveal></div><div className={styles.contactFoot}><span>FATLIND LUBISHTANI</span><span>BASED IN KOSOVO</span></div>
+      <Reveal className={styles.sectionLabel}><span>04</span> SAY HELLO</Reveal><div className={styles.contactInner}><Reveal><p className={styles.contactEyebrow}>HAVE A PROJECT OR JUST WANT TO TALK?</p><h2>Let’s make<br /><em>something useful.</em></h2></Reveal><Reveal className={styles.contactLinks}><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a><a href={github} target="_blank" rel="noreferrer">GitHub <Arrow /></a></Reveal></div><div className={styles.contactFoot}><span>FATLIND LUBISHTANI</span><span>BASED IN KOSOVO</span></div>
     </section>
   </main>;
 }
